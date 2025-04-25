@@ -40,5 +40,5 @@ https://bright-unicorn-c0266d.netlify.app/
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Anshuldhakate/weather-app.git
 cd weather-app
