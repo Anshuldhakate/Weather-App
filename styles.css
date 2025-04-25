@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(135deg, #74ebd5, #acb6e5); */
+    background: url('./pexels-clickerhappy-3768.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Main container */
+  .weather-container {
+    background: #292727cc;
+    backdrop-filter: blur(8px);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 650px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Heading */
+  .weather-container h1 {
+    font-size: 28px;
+    color: whitesmoke;
+    margin-bottom: 25px;
+  }
+  
+  /* Input and button */
+  .search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #cityInput {
+    padding: 12px 15px;
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 1px 1px 4px #ccc;
+  }
+  
+  button {
+    padding: 12px 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Weather result styling */
+  .weather-result {
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .weather-result h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .weather-result img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 0;
+  }
+  
+  .weather-result p {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+  }
+  
+  /* Error messages */
+  .error {
+    color: #ff3b3b;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .weather-container {
+      padding: 30px 20px;
+    }
+  
+    #cityInput {
+      width: 100%;
+    }
+  }
+  
